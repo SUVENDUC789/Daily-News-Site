@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block container %}
+
+<div class="container">
+  <h1 class="text-center">Country:India and Category:Business</h1>
+
+    {% for item in data %}
+    <div class="jumbotron my-5">
+      <img src="{{item.urlToImage}}" alt="{{item.urlToImage}}" height="200px">
+      <h1 class="display-10"> <b>Title :</b> <i>{{item.title}}</i></h1>
+      <p class="lead"><b>Description :</b> <i>{{item.description}}</i></p>
+      <hr class="my-4">
+      <p><b>Content : </b> <i>{{item.content}}</i></p>
+      <a class="btn btn-primary btn-lg" href="{{item.url}}">Click here view details</a>
+      <!-- <li>publishedAt : {{item.publishedAt}}</li> -->
+    </div>
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}
