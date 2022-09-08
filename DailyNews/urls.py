@@ -19,4 +19,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('usa/', views.usa, name='usa'),
+    path('tesla/', views.tesla, name='tesla'),
+    path('Apple/', views.Apple, name='Apple'),
+    path('TechCrunch/', views.TechCrunch, name='TechCrunch'),
+    path('Wall_Street_Journal/', views.Wall_Street_Journal, name='Wall_Street_Journal'),
 ]
