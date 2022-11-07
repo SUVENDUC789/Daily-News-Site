@@ -33,7 +33,7 @@ def usa(request):
 
 def tesla(request):
 
-    api=f"https://newsapi.org/v2/everything?q=tesla&from=2022-08-08&sortBy=publishedAt&apiKey=9bf9b3d682f142259e66b346a06d85ab"
+    api=f"https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=9bf9b3d682f142259e66b346a06d85ab"
 
     data=requests.get(api)
 
@@ -72,7 +72,7 @@ def Wall_Street_Journal(request):
 
 def Apple(request):
 
-    api=f"https://newsapi.org/v2/everything?q=apple&from=2022-09-07&to=2022-09-07&sortBy=popularity&apiKey=9bf9b3d682f142259e66b346a06d85ab"
+    api=f"https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=9bf9b3d682f142259e66b346a06d85ab"
 
     data=requests.get(api)
 
